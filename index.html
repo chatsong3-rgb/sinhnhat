@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ê Biết Nay Ngày Gì Không ??</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="mode-toggle" title="Chuyển đổi chế độ sáng/tối">🌙</button>
+<button id="music-btn" title="Phát/tạm dừng nhạc nền">🔇</button>
+
+<div class="container">
+  <h1>Chúc Mừng Sinh Nhật Nhaaa!!!!</h1>
+  <img src="https://i.pinimg.com/736x/79/81/88/79818873e3d488ba818c8aaad7ff470c.jpg" alt="Avatar" class="avatar" />
+
+  <h1>Ở dưới này có gì đó </h1>
+
+  <div>
+    <button class="btn" id="open-gift-btn" aria-haspopup="dialog" aria-controls="popup" aria-expanded="false">Ở đây nè😏</button>
+    <button class="btn" id="exit-btn" aria-haspopup="dialog">Không là ở đây😒</button>
+  </div>
+</div>
+
+<div class="popup" id="exit-popup" role="alertdialog" aria-modal="true">
+  <center><img src="https://i.pinimg.com/736x/32/a5/4d/32a54dc49f2dbd53374f67b025a3d6c4.jpg" alt="Xin lỗi mà"/></center>
+  <h2>Ê giỡn á 😢</h2>
+  <p>Bên kia mới đúng 🥺</p>
+  <button class="close-btn" id="close-exit-btn">Ok nè😁</button>
+</div>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
+  <center><img src="https://i.pinimg.com/736x/0d/5b/f3/0d5bf3ef087a77846742fa96fa300f07.jpg" alt="Quà sinh nhật" /></center>
+  <h2 id="popup-title">Bất ngờ chưa!</h2>
+  <div id="typing-text" aria-live="polite" aria-atomic="true"></div>
+  <button class="close-btn" id="close-popup-btn">Đóng</button>
+</div>
+<canvas id="fireworks"></canvas>
+
+<audio id="bg-music" autoplay loop>
+  <source src="style_HPBD.mp3" type="audio/mpeg" />
+</audio>
+
+<div class="popup" id="guess-age-popup">
+  <div class="age-content">
+    <center>
+      <img src="https://i.pinimg.com/736x/0d/5b/f3/0d5bf3ef087a77846742fa96fa300f07.jpg" 
+        alt="Bánh sinh nhật" class="birthday-cake"/>
+    </center>
+    <h2>Thổi nến đi nào 🎂</h2>
+    <div class="candles" style="display:flex; justify-content:center; gap:20px; margin-top:20px;">
+      <span class="candle" data-lit="true">🔥</span>
+      <span class="candle" data-lit="true">🔥</span>
+      <span class="candle" data-lit="true">🔥</span>
+    </div>
+  </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
